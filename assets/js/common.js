@@ -1,0 +1,5 @@
+jquery(function($) {
+
+	// Custom JS
+
+});
