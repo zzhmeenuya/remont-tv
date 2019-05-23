@@ -1,5 +1,30 @@
 $(function(){
 
+	// IDENTICAL HEIGHT OF ELEMENTS
+	function heightses() {
+		if( $(window).width() <= 768 ){
+			$('.advantages-item').height('auto').equalHeights();
+		}
+	}
+	$(window).on('load risize', heightses);
+	// IDENTICAL HEIGHT OF ELEMENTS -END
+
+	$('.pol-conf').magnificPopup({
+		type: 'inline',
+	});
+
+	// INPUT MASK
+	$('input[name="phone"]').mask('+7 (999) 999-99-99', {
+		placeholder: "Ваш телефон",
+		selectOnFocus: true
+	});
+	// INPUT MASK
+
+	$('#form-cost__agree').prop('checked', true);
+	$('#form-header__agree').prop('checked', true);
+	$('.form-header__input-btn input[type=submit]').removeClass('off');
+	$('.form-cost__input-btn input[type=submit]').removeClass('off');
+
 	$('.footer-callback').on('click', function(){
 		if( $(this).hasClass('flag') ){
 			$(this).removeClass('flag').html('Заказать звонок');
@@ -69,7 +94,7 @@ $(function(){
 				return regp.test(el.val());
 			}
 			if (name == 'text') {
-				var regp = /^[a-zA-Zа-яёА-ЯЁ]{10,300}$/i;
+				var regp = /^[a-zA-Zа-яёА-ЯЁ0-9\ ,\.-]{5,300}$/i;
 				return regp.test(el.val());
 			}
 		}
@@ -124,40 +149,22 @@ $(function(){
 			data: th.serialize()
 		}).done(function(response) {
 			console.log(response);
-			if( response === 'access' ){
-
-				// уберает показ ошибок
-				form.find('input').removeClass('error success');
-				formInfo.html('');
-				// показывает сообщение успешной отправки
-				formInfo.removeClass('info_error');
-				formInfo.addClass('info_acces');
-				setTimeout(function () {
-					formInfo.html('<p>Форма успешно отправлена, спасибо. В ближайшее время мы с Вами свяжемся.</p>');
-					formBtnSubmit.val('Узнать стоимость ремонта').removeClass('disabled-btn');
-					form.find('input').removeAttr('readonly');
-					formBtnSubmit.removeAttr('readonly');
-					th.trigger("reset");
-					// $('#form-cost__agree').prop('checked', true);
-					$('.form-header__input-btn input[type=submit]').addClass('off');
-				}, 5000);
-			}else{
-
-				// уберает показ ошибок
-				form.find('input').removeClass('error success');
-				formInfo.html('');
-				// показывает сообщение успешной отправки
-				formInfo.removeClass('info_acces');
-				formInfo.addClass('info_error');
-				setTimeout(function () {
-					formInfo.html('<p>Ошибка отправки формы!<span>*</span></p>');
-					formBtnSubmit.val('Узнать стоимость ремонта').removeClass('disabled-btn');
-					form.find('input').removeAttr('readonly');
-					formBtnSubmit.removeAttr('readonly');
-					th.trigger("reset");
-					$('#form-header__agree').prop('checked', true);
-				}, 800);
-			}
+			// уберает показ ошибок
+			form.find('input').removeClass('error success');
+			formInfo.html('');
+			// показывает сообщение успешной отправки
+			formInfo.removeClass('info_error');
+			formInfo.addClass('info_acces');
+			setTimeout(function () {
+				formInfo.html('<p>Форма успешно отправлена, спасибо. В ближайшее время мы с Вами свяжемся.</p>');
+				formBtnSubmit.val('Узнать стоимость ремонта').removeClass('disabled-btn');
+				form.find('input').removeAttr('readonly');
+				formBtnSubmit.removeAttr('readonly');
+				th.trigger("reset");
+				$('#form-header__agree').prop('checked', true);
+				// $('.form-header__input-btn input[type=submit]').addClass('off');
+			}, 5000);
+			
 		}).fail(function(response) {
 			console.log(response);
 			// уберает показ ошибок
@@ -283,40 +290,22 @@ $(function(){
 			data: th.serialize()
 		}).done(function(response) {
 			console.log(response);
-			if( response === 'access' ){
+			// уберает показ ошибок
+			form.find('input').removeClass('error success');
+			formInfo.html('');
+			// показывает сообщение успешной отправки
+			formInfo.removeClass('info_error');
+			formInfo.addClass('info_acces');
+			setTimeout(function () {
+				formInfo.html('<p>Форма успешно отправлена, спасибо. В ближайшее время мы с Вами свяжемся.</p>');
+				formBtnSubmit.val('Узнать стоимость ремонта').removeClass('disabled-btn');
+				form.find('input').removeAttr('readonly');
+				formBtnSubmit.removeAttr('readonly');
+				th.trigger("reset");
+				$('#form-cost__agree').prop('checked', true);
+				// $('.form-cost__input-btn input[type=submit]').addClass('off');
+			}, 800);
 
-				// уберает показ ошибок
-				form.find('input').removeClass('error success');
-				formInfo.html('');
-				// показывает сообщение успешной отправки
-				formInfo.removeClass('info_error');
-				formInfo.addClass('info_acces');
-				setTimeout(function () {
-					formInfo.html('<p>Форма успешно отправлена, спасибо. В ближайшее время мы с Вами свяжемся.</p>');
-					formBtnSubmit.val('Узнать стоимость ремонта').removeClass('disabled-btn');
-					form.find('input').removeAttr('readonly');
-					formBtnSubmit.removeAttr('readonly');
-					th.trigger("reset");
-					// $('#form-cost__agree').prop('checked', true);
-					$('.form-cost__input-btn input[type=submit]').addClass('off');
-				}, 800);
-			}else{
-
-				// уберает показ ошибок
-				form.find('input').removeClass('error success');
-				formInfo.html('');
-				// показывает сообщение успешной отправки
-				formInfo.removeClass('info_acces');
-				formInfo.addClass('info_error');
-				setTimeout(function () {
-					formInfo.html('<p>Ошибка отправки формы!<span>*</span></p>');
-					formBtnSubmit.val('Узнать стоимость ремонта').removeClass('disabled-btn');
-					form.find('input').removeAttr('readonly');
-					formBtnSubmit.removeAttr('readonly');
-					th.trigger("reset");
-					$('#form-cost__agree').prop('checked', true);
-				}, 800);
-			}
 		}).fail(function(response) {
 			console.log(response);
 			// уберает показ ошибок

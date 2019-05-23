@@ -51,15 +51,15 @@ try {
     //Server settings
     $mail->SMTPDebug = 2;                                       // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
-    $mail->Host       = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+    $mail->Host       = 'smtp.mail.ru';                         // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'mailphp9@gmail.com';                   // SMTP username
-    $mail->Password   = 'mailphp1234';                          // SMTP password
+    $mail->Username   = 'mailphp9@mail.ru';                  // SMTP username
+    $mail->Password   = 'u42Hq1N6XI';                      // SMTP password
     $mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, `ssl` also accepted
     $mail->Port       = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('mailphp9@gmail.com');
+    $mail->setFrom('mailphp9@mail.ru');
     $mail->addAddress('servise54@ya.ru');                       // Add a recipient
     //$mail->addAddress('ellen@example.com');                   // Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
@@ -72,7 +72,7 @@ try {
 
     // Content
     $mail->isHTML(true);                                        // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
+    $mail->Subject = 'Новая заявка с сайта ремонт ТВ';
     $mail->Body    = $message;
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
@@ -82,4 +82,5 @@ try {
 		$response =  "error: {$mail->ErrorInfo}";
 }
 
-die( json_encode( array('response' => $response) ) );
+// die( json_encode( array('response' => $response) ) );
+die( $response );
