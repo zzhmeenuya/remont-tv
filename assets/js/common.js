@@ -1,5 +1,18 @@
 $(function(){
 
+	$('.footer-callback').on('click', function(){
+		if( $(this).hasClass('flag') ){
+			$(this).removeClass('flag').html('Заказать звонок');
+			$('.section-cost__title').html('Узнайте стоимость ремонта <p>Вашего ТВ прямо сейчас!</p>');
+			$('.form-cost input[name="subject"]').val('Узнайте стоимость ремонта вашего ТВ');
+		}
+		else{
+			$(this).addClass('flag').html('Узнать Стоимость ремонта ТВ');
+			$('.section-cost__title').html('Заказать обратный звонок');
+			$('.form-cost input[name="subject"]').val('Заказ обратного звонка');
+		}
+	});
+
 	// SCROLL TO CALLBACK
 	$('.contact-phone-callback').on('click', function (e) {
 		e.preventDefault();
@@ -9,12 +22,16 @@ $(function(){
 		$('html, body').animate({
 			scrollTop: sectionOffsetTop - offset
 		}, 1000);
-
-
-		$('.section-cost__title').html('Заказать обратный звонок');
-		$('.form-cost input[name="subject"]').val('');
 	});
 	// SCROLL TO CALLBACK -END
+
+	$('.top-callback').on('click', function(){
+		$('.section-cost__title').html('Заказать обратный звонок');
+		$('.form-cost input[name="subject"]').val('Заказ обратного звонка');
+
+		$('.footer-callback').addClass('flag').html('Узнать Стоимость ремонта ТВ');
+
+	});
 	
 	// form header agree
 	const labelFormHeaderAgree = $('label[for="form-header__agree"]');
