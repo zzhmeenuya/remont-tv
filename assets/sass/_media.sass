@@ -8,12 +8,107 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+	.advantages-item
+		margin: 20px 15px
+		width: calc(100% / 12 * 12 - 30px)
+
+	.header-content
+		flex-direction: column
+
+	.header-form-container
+		width: calc(100% / 24 * 24)
+
+	.how-works-item
+		margin: 20px 15px
+		width: calc(100% / 12 * 6 - 30px)
+
+	.our-experience
+		margin-bottom: 50px
+
+	.main-header
+		padding-bottom: 100px
+
+
+
+
+
 
 // ≥768px
 +media-breakpoint-down(sm)
+	.how-works-item
+		margin: 20px 15px
+		width: calc(100% / 12 * 12 - 30px)
+
+	.header-top-container
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	.contact-info-container
+		text-align: center
+		order: 3
+	.main-address
+		order: 2
+		margin-bottom: 30px
+	.logo
+		order: 1
+		margin-bottom: 30px
+
+	.customer-block
+		flex-direction: column
+	.customer-block__img-container
+		width: calc(100% / 12 * 12)
+	.customer-block__content
+		width: calc(100% / 12 * 12)
+
+	.section-customers
+		padding-bottom: 25px
+
+	.customer-block_other 
+		flex-direction: column-reverse
+		.customer-block__img-container
+			margin-left: 0
+		.customer-block__content
+			padding: 15px
+
+
 
 // ≥576px
 +media-breakpoint-down(xs)
+	.header__description
+		font-size: 25px
+
+	.our-experience
+		width: 305px
+		p
+			font-size: 17px
+
+	.advantages-item
+		height: auto
+		img
+			display: none
+
+	.main-header
+		padding-bottom: 50px
+
+	.section-advantages_padding
+		padding-bottom: 50px
+
+	.section-how-works__title
+		font-size: 30px
+
+	.section-customers__title
+		font-size: 30px
+
+	.section-brands__title
+		font-size: 30px
+		line-height: 1em
+		margin-bottom: 30px
+
+	.section-brands
+		padding-bottom: 50px
+
+	
 
 
 /*==========  Mobile First  ==========*/

@@ -35,15 +35,365 @@
 
 <body>
 
-	<header class="main-header">
+	<header class="main-header" style="background: url(/assets/img/header/background.png) no-repeat center / cover">
 		<div class="container">
 
-			123
+			<div class="header-top-container">
+
+				<div class="main-address">
+					<a href="https://yandex.ru/maps/?ll=46.034158%2C51.533103&z=12" target="_blank">
+						<img src="/assets/img/icons/map.png" alt="карта">
+					</a>
+					<address class="address header__address">
+						<span class="address__city">г. Новосибирск</span>
+						<span class="address__street">ул. Станционная, д. 5</span>
+					</address>
+				</div><!-- /.main-address -->
+				
+				<a href="/" class="logo">
+					<img src="/assets/img/logo/logo.png" alt="Ремонт телевизоров">
+				</a><!-- /.logo -->
+
+				<div class="contact-info-container">
+					<a href="tel:8(383)3991320" class="header-phone">8 (383) 399 13 20</a>
+					<div class="time-work">с 10:00 до 20:00</div>
+					<a class="contact-phone-callback" href="#section-cost">Заказать звонок</a>
+				</div><!-- /.contact-info-container -->
+
+			</div><!-- /.header-top-container -->
+
+			<div class="header-content">
+
+				<div class="header-description-container">
+					<div class="header-description-inner-container">
+						<p class="header__description">
+							Профессиональный ремонт ЖК 
+							и плазменных телевизоров
+							любой степени сложности 
+							в Новосибирске с бесплатной 
+							диагностикой и достaвкой
+						</p>
+						<div class="our-experience">
+							<div class="our-experience__content">
+								<p>Мы занимаемся ремонтом телевизоров <span>c 2014 года</span></p>
+							</div>
+						</div>	
+					</div>
+
+					<!-- 
+						<div class="image-worker">
+						<img src="/" alt="Наш работник">
+					</div> -->
+					<!-- /.image-worker -->
+				</div><!-- /.header-description-container -->
+				
+				<div class="header-form-container">
+					<form class="form form-header" >
+						<h2 class="form-header__title">Вызов мастера</h2>
+						<p class="form-header__description">Оставьте заявку и мы перезвоним Вам!</p>
+
+						<div class="form-header__input-group input-group">
+							<div class="form-header__input-info input-info"></div>
+							<label for="form-header__name" class="d-none">Ваше имя</label>
+							<input type="text" id="form-header__name" name="name" placeholder="Ваше имя">
+						</div>
+						<div class="form-header__input-group input-group">
+								<div class="form-header__input-info input-info"></div>
+							<label for="form-header__phone" class="d-none">Ваше имя</label>
+							<input type="text" id="form-header__phone" name="phone" placeholder="Ваш телефон">
+						</div>
+						<div class="form-header__input-group input-group">
+							<div class="form-header__input-info input-info"></div>
+							<label for="form-header__problem" class="d-none">Суть проблемы</label>
+							<textarea name="problem" id="form-header__problem" placeholder="Суть проблемы"></textarea>
+						</div>
+						<div class="form-header__input-group form-header__input-btn">
+							<input type="submit" value="Узнать стоимость ремонта" class="off">
+						</div>
+						<div class="form-header__input-group">
+							<input type="checkbox" id="form-header__agree" class="d-none" name="agree" value="1">
+							<label for="form-header__agree" class="label-form-agree">Я принимаю условия <a href="/" >передачи информации</a></label>
+						</div>
+						<div class="form-header__info"></div>
+					</form>
+				</div>
+
+			</div><!-- /.header-content -->
 
 		</div>
 	</header>
 
+	<main>
+
+		<div class="section-advantages section-advantages_padding">
+			<div class="container">
+
+					<div class="advantages-items">
+
+						<div class="advantages-item advantages-item_img-car">
+							<img src="/assets/img/advantages/volkswagen-caddy-life-life-candy-white.png" alt="alt">
+							<div class="advantages-item__text-content">
+								<h3 class="advantages-item__title">Бесплатная доставка</h3>
+								<div class="advantages-item__description">
+									<p>Доставка в мастерскую и обратно по адресу клиента осуществляется нашими сотрудниками бесплатно</p>
+								</div>
+							</div>
+							<span class="advantages-item__number ">01</span>
+						</div><!-- /.advantages-item -->
+						<div class="advantages-item advantages-item_img-guarantee">
+							<img src="/assets/img/advantages/stamps_s.png" alt="alt">
+							<div class="advantages-item__text-content">
+								<h3 class="advantages-item__title">Гарантия 1 год</h3>
+								<div class="advantages-item__description">
+									<p>Качество, подтверждаемое гарантией</p>
+								</div>
+							</div>
+							<span class="advantages-item__number">02</span>
+						</div><!-- /.advantages-item -->
+						<div class="advantages-item advantages-item_img-tools">
+							<img src="/assets/img/advantages/tv-and-electronics-repair.png" alt="alt">
+							<div class="advantages-item__text-content">
+								<h3 class="advantages-item__title">Срочная диагностика</h3>
+								<div class="advantages-item__description">
+									<p>Используя современное оборудование, мы проведем диагностику, позволяющую выявить причины поломки.</p>
+								</div>
+							</div>
+							<span class="advantages-item__number">03</span>
+						</div><!-- /.advantages-item -->
+						<div class="advantages-item advantages-item_img-experience">
+							<img src="/assets/img/advantages/Слой 7.png" alt="alt">
+							<div class="advantages-item__text-content">
+								<h3 class="advantages-item__title">Опыт работы более 5 лет</h3>
+								<div class="advantages-item__description">
+									<p>Обратившись в наш сервисный центр
+										по телефону, Вы всегда сможете получить консультацию профессионала</p>
+								</div>
+							</div>
+							<span class="advantages-item__number">04</span>
+						</div><!-- /.advantages-item -->
+
+					</div><!-- /.advantages-items -->
+
+			</div>
+		</div><!-- /.section-advantages -->
+
+		<section class="section section-how-works" style="background: url(/assets/img/how-works/background.png) no-repeat center / cover">
+			<div class="container">
+
+				<h2 class="section-how-works__title text-center">Как <span>происходит</span><div>работа?</div></h2>
+
+				<div class="how-works-items">
+
+					<div class="how-works-item">
+						<div class="how-works-item__img-container">
+							<img src="/assets/img/icons/Shape 1.png" alt="alt">
+						</div>
+						<h3 class="how-works-item__title">Вы звоните нам или <br> оставляете заявку <br> на обратный звонок</h3>
+						<div class="how-works-item__description">
+							<p>
+								Вы называете модель TV и поломку. Мы консультируем по стоимости её устранения
+							</p>
+						</div>
+						<div class="how-works-item__number">01</div>
+					</div><!-- /.how-works-item -->
+					<div class="how-works-item">
+						<div class="how-works-item__img-container">
+							<img src="/assets/img/icons/Forma 1.png" alt="alt">
+						</div>
+						<h3 class="how-works-item__title">Мастер приезжает по указанному вами адресу</h3>
+						<div class="how-works-item__description">
+							<p>Наш мастер разбирает телевизор
+									и устанавливает точную причину 
+									неисправности.</p>
+						</div>
+						<div class="how-works-item__number">02</div>
+					</div><!-- /.how-works-item -->
+					<div class="how-works-item">
+						<div class="how-works-item__img-container">
+							<img src="/assets/img/icons/Forma 2.png" alt="alt">
+						</div>
+						<h3 class="how-works-item__title">Рассчитываем календарь
+								сдачи и стоимость
+								работ</h3>
+						<div class="how-works-item__description">
+							<p>Мастер сообщает Вам точную
+									стоимость и сроки
+									ремонта.</p>
+						</div>
+						<div class="how-works-item__number">03</div>
+					</div><!-- /.how-works-item -->
+					<div class="how-works-item">
+						<div class="how-works-item__img-container">
+							<img src="/assets/img/icons/Forma 3.png" alt="alt">
+						</div>
+						<h3 class="how-works-item__title">Мы получаем Ваше 
+								одобрение на 
+								выполнение работ</h3>
+						<div class="how-works-item__description">
+							<p>Мастер ремонтирует TV 
+									и составляет гарантийный
+									талон.</p>
+						</div>
+						<div class="how-works-item__number">04</div>
+					</div><!-- /.how-works-item -->
+					<div class="how-works-item">
+						<div class="how-works-item__img-container">
+							<img src="/assets/img/icons/Forma 4.png" alt="alt">
+						</div>
+						<h3 class="how-works-item__title">Мы получаем Ваше 
+								одобрение на 
+								выполнение работ</h3>
+						<div class="how-works-item__description">
+							<p>Мастер ремонтирует TV 
+									и составляет гарантийный
+									талон.</p>
+						</div>
+						<div class="how-works-item__number">05</div>
+					</div><!-- /.how-works-item -->
+					<div class="how-works-item how-works-item_bgc_orange">
+						<div class="how-works-item__img-container">
+							<img src="/assets/img/icons/logo-icon.png" alt="alt">
+						</div>
+						<h3 class="how-works-item__title">Мы получаем Ваше 
+								одобрение на 
+								выполнение работ</h3>
+						<div class="how-works-item__description">
+							<p>Мастер ремонтирует TV 
+									и составляет гарантийный
+									талон.</p>
+						</div>
+						<div class="how-works-item__number">06</div>
+					</div><!-- /.how-works-item -->
+				
+
+				</div><!-- /.how-works-items -->
+
+			</div>
+		</section><!-- /.section-how-works -->
+
+		<section class="section section-customers">
+			<div class="container">
+
+				<h2 class="section-customers__title text-center">Почему клиенты выберают<div class="color_orange">Сервис ТВ №1?</div></h2>
+
+				<div class="customer-block">
+					<div class="customer-block__img-container">
+						<img class="customer-block__img" src="/assets/img/customers/1.png" alt="alt">
+					</div>
+					<div class="customer-block__content">
+						<div class="customer-block__number">01</div>
+						<div class="customer-block__description">
+							<p>Используя современное оборудование, мы проведем диагностику, позволяющую выявить причины поломки. Наличие всех необходимых инструментов и материалов для ремонта, а также регулярно пополняющийся запас деталей — плат, блоков питания и других запчастей, позволяет выполнять работы в максимально короткий срок. </p>
+						</div>
+					</div>
+				</div><!-- /.customer-block -->
+				<div class="customer-block customer-block_other">
+					<div class="customer-block__content">
+						<div class="customer-block__number">02</div>
+						<div class="customer-block__description">
+							<p>Обратившись к нам, Вы полностью избавитесь от каких-либо хлопот, связанных с транспортировкой: доставка в мастерскую и обратно по адресу клиента осуществляется нашими сотрудниками бесплатно. </p>
+						</div>
+					</div>
+					<div class="customer-block__img-container">
+						<img class="customer-block__img" src="/assets/img/customers/2.png" alt="alt">
+					</div>
+				</div><!-- /.customer-block -->
+				<div class="customer-block">
+					<div class="customer-block__img-container">
+						<img class="customer-block__img" src="/assets/img/customers/3.png" alt="alt">
+					</div>
+					<div class="customer-block__content">
+						<div class="customer-block__number">03</div>
+						<div class="customer-block__description">
+							<p>Починка производится специалистами компании 
+									«Сервис тв1», даже если устранение неисправностей требует применения спец. оборудования. Обратившись к нам по телефону, Вы всегда сможете получить консультацию профессионала. Подробно опишите, что случилось 
+									с техникой, при каких обстоятельствах она вышла из строя; наш специалист решит, можно ли решить проблему на месте или же потребуется везти телевизор в сервисный центр. </p>
+						</div>
+					</div>
+				</div><!-- /.customer-block -->
+				<div class="customer-block customer-block_other">
+					<div class="customer-block__content">
+						<div class="customer-block__number">04</div>
+						<div class="customer-block__description">
+							<p>Мы ремонтируем ЖК телевизоры качественно. Если осуществляется замена детали, то акцентируем Ваше внимание на том, что специалисты устанавливают только те элементы, которые рекомендованы производителем. Вы можете быть уверены в высоком качестве услуг, предоставляемых нашей компанией: на каждую выполненную работу дается гарантия. </p>
+						</div>
+					</div>
+					<div class="customer-block__img-container">
+						<img class="customer-block__img" src="/assets/img/customers/4.png" alt="alt">
+					</div>
+				</div><!-- /.customer-block -->
+
+			</div>
+		</section><!-- /.section-custbrandsomers -->
+
+		<section class="section section-brands">
+			<div class="container">
+				<h2 class="section-brands__title text-center">Мы работаем со всеми брендами</h2>
+
+				<img class="all-brands-images" src="/assets/img/brands/1.png" alt="alt">
+			</div>
+		</section><!-- /.section-brands -->
+
+		<section class="section section-cost section-cost_ptb50" id="section-cost" style="background: url(/assets/img/cost/banner.png) no-repeat center / cover">
+			<div class="container">
+				<div class="section-cost-inner-container">
+					<h2 class="section-cost__title text-center">Узнайте стоимость ремонта <p>Вашего ТВ прямо сейчас!</p></h2>
+
+					<form class="form form-cost" >
+						<div class="form-cost__input-group input-group">
+							<label for="form-cost__name" class="d-none">Ваше имя</label>
+							<input type="text" id="form-cost__name" name="name" placeholder="Ваше имя">
+						</div>
+						<div class="form-cost__input-group input-group">
+							<label for="form-cost__phone" class="d-none">Ваше имя</label>
+							<input type="text" id="form-cost__phone" name="phone" placeholder="Ваш телефон">
+						</div>
+						<div class="form-cost__input-group input-group form-cost__input-btn">
+							<input type="submit" value="Узнать стоимость ремонта" class="off">
+							<div>
+								<input type="checkbox" id="form-cost__agree" class="d-none" name="agree" value="1">
+								<label for="form-cost__agree" class="label-form-agree">Я принимаю условия <a href="/" >передачи информации</a></label>
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+
+			<div class="header-top-container">
+
+					<div class="main-address">
+						<address class="address header__address">
+							<span class="address__city">г. Новосибирск</span>
+							<span class="address__street">ул. Станционная, д. 5</span>
+						</address>
+					</div><!-- /.main-address -->
+					
+					<div class="logo-container">
+						<a href="/" class="logo">
+							<img src="/assets/img/logo/logo.png" alt="Ремонт телевизоров">
+						</a><!-- /.logo -->
+
+						<a class="pol-conf" href="/">Политика конфиденциальности</a>
+					</div>
+						
 	
+					<div class="contact-info-container">
+						<a href="tel:8(383)3991320" class="phone">8 (383) 399 13 20</a>
+						<div class="time-work">с 10:00 до 20:00</div>
+						<!-- <a href="/">Заказать звонок</a> -->
+					</div><!-- /.contact-info-container -->
+	
+				</div><!-- /.header-top-container -->
+
+		</div>
+	</footer>
 
 	<script src="assets/js/scripts.min.js"></script>
 

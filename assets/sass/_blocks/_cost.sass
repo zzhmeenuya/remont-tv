@@ -1,0 +1,79 @@
+.section-cost-inner-container
+	padding: 60px 75px
+	background-color: #fff
+	border-radius: 9px
+
+.section-cost
+	&__title
+		font-size: 40px
+		font-family: $Circe-Bold
+		line-height: 1em
+
+.section-cost_ptb50
+	padding-top: 100px
+	padding-bottom: 100px
+
+.form-cost__input-btn
+	input[type="submit"]
+		cursor: pointer
+		&.off
+			pointer-events: none
+			opacity: .5
+
+#form-cost__agree
+	&:checked
+		+ label
+			&:before
+				content: '\2714'
+				background-color: white
+				border: 1px solid #8e8e8e
+				color: #000
+				line-height: 15px
+				transform: translateY(2px)
+
+label[for="form-cost__agree"]
+	font-size: 11px
+	cursor: pointer
+	&:before
+		content: ''
+		font-size: 16px
+		display: inline-block
+		width: 15px
+		height: 15px
+		background-color: white
+		margin-right: 10px
+		border: 1px solid #8e8e8e
+		box-shadow: inset -1px -1px 3px #bfbfbf
+		margin-right: 10px
+		transform: translateY(2px)
+
+.form-cost
+	display: flex
+	flex-flow: row wrap
+	margin: 0 -10px 0 -10px
+	.form-cost__input-group
+		width: calc(100% / 12 * 4 - 20px)
+		margin: 0 10px
+	input
+		width: 100%
+		border: none
+	input[type="text"]
+		height: 55px
+		background-color: #F2F2F2
+		border-radius: 8px
+		padding: 15px
+		color: #707070
+		font-size: 17px
+		font-family: $Circe-Light
+	input[type="submit"]
+		height: 50px
+		border-radius: 50px
+		background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,223,63,1) 0%, rgba(255,189,32,1) 100%)
+		box-shadow: 0 5px #FF9005 
+		transition: all .30s ease
+		&:active
+			background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(229,169,30,1) 0%, rgba(255,144,5,1) 100%)
+			transform: translateY(3px)
+			box-shadow: 0 2px #FF9005 
+
+		

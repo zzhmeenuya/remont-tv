@@ -1,0 +1,209 @@
+.header-top-container
+	display: flex
+	justify-content: space-between
+	padding-top: 15px
+	margin-bottom: 90px
+
+.main-header
+	padding-bottom: 181px
+
+.header
+	&__address
+		margin-bottom: 0
+		margin-top: 10px
+	&__description
+		font-family: $Circe-ExtraBold
+		font-size: 34px
+		line-height: 1em
+		max-width: 500px
+		margin-bottom: 70px
+
+#form-header__problem
+	height: 100px
+	resize: none
+
+.form-header
+	input, textarea
+		font-size: 15px
+		font-family: $Circe-Light
+
+.form-header__info 
+	text-align: center
+	line-height: 1.1em
+	&.info_error
+		span
+			color: red
+
+.address
+	span
+		display: block
+		line-height: 21px
+	&__city
+		font-family: $Circe-Bold
+		font-size: 18px
+	&__street
+		color: $grayText
+
+.header-phone
+	color: #000
+	font-family: $Circe-Bold
+	font-size: 26px
+	line-height: 1em
+	&:hover
+		color: #000
+
+.contact-phone-callback
+	color: $accent
+	position: relative
+	font-size: 20px
+	font-family: $Circe-Bold
+	&:before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 1.5px
+		background-color: $accent
+		bottom: 0
+		right: 0
+		transition: all .25s ease
+	&:hover
+		color: $accent
+		text-decoration: none
+		&:before
+			content: ''
+			width: 0
+
+.time-work
+	font-size: 20px
+	color: $grayText
+
+.main-address
+	display: flex
+
+.address
+	&__city
+	&__street
+
+.form-header__input-btn
+	input[type="submit"]
+		cursor: pointer
+		box-shadow: 0 5px #FF9005
+		&.off
+			pointer-events: none
+			opacity: .5
+
+.form-header__input-info
+	font-size: 15px
+	font-family: $Circe-Light
+	span
+		color: red
+		font-size: 16px
+		font-family: $default-font
+
+#form-header__agree
+	&:checked
+		+ label
+			&:before
+				content: '\2714'
+				background-color: white
+				border: 1px solid #8e8e8e
+				color: #000
+				line-height: 19px
+				transform: translateY(3px)	
+
+label[for="form-header__agree"]
+	font-size: 11px
+	cursor: pointer
+	&:before
+		content: ''
+		display: inline-block
+		font-size: 16px
+		width: 15px
+		height: 15px
+		background-color: white
+		margin-right: 10px
+		border: 1px solid #8e8e8e
+		box-shadow: inset -1px -1px 3px #bfbfbf
+		margin-right: 10px
+		transform: translateY(3px)	
+
+.header-content
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+
+.header-description-container
+	width: calc(100% / 24 * 17)
+
+.header-form-container
+	width: calc(100% / 24 * 7)
+
+
+.form-header
+	background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(245,166,81,1) 0%, rgba(246,147,80,1) 100%)
+	border-radius: 8px
+	color: #fff
+	padding: 20px
+	&__title
+		font-size: 25px
+		text-align: center
+	&__description
+		text-align: center
+	&__input-group
+		margin-bottom: 10px
+		input, textarea
+			border: none
+			padding: 10px 15px
+			width: 100%
+			border-radius: 6px
+	&__input-btn
+		input
+			background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,223,63,1) 0%, rgba(255,189,32,1) 100%)
+			height: 60px
+			border-radius: 50px
+
+.header-description-container
+	display: flex
+
+
+.our-experience
+	position: relative
+	width: 400px
+	height: 79px
+	color: $accent
+	font-size: 24px
+	pointer-events: none
+	z-index: 10
+	&:before
+		position: absolute
+		content: ""
+		width: 71.1% // 100% * height/width =50%; 50% * tan(30deg) = 28.9%; 100-28.9 = 71.1
+		height: 100%
+		transform-origin: 0 100%
+		transform: skew(-30deg)
+		background: #fff
+		box-shadow: -2px 2px 5px 0px #FC974C
+		border-radius: 6px
+		z-index: -1
+	&__content
+		margin: 0px 12.9%
+		margin-pointer-events: auto
+		height: 100%
+		vertical-align: middle
+		justify-content: center
+		display: flex
+		align-items: center
+	span
+		color: darken($accent, 5%)
+		font-family: $Circe-ExtraBold
+	p
+		font-size: 20px
+		margin-bottom: 0
+		line-height: 1.1em
+		font-family: $Circe-Bold
+
+.label-form-agree
+	a
+		text-decoration: underline
+		color: inherit
+			

@@ -1,0 +1,53 @@
+.how-works-items
+	display: flex
+	flex-flow: row wrap
+	margin: 0 -15px 0 -15px
+
+.how-works-item
+	margin: 20px 15px
+	width: calc(100% / 12 * 4 - 30px)
+	background: #fff
+	border-radius: 6px
+	padding: 20px
+	position: relative
+	height: 350px
+	&__title
+		color: $accent
+		line-height: 25px
+		font-size: 22px
+		font-family: $Circe-Bold
+		margin-bottom: 20px
+	&__description
+		font-size: 18px
+		line-height: 1em
+	&__img-container
+		margin-bottom: 23px
+	&__number
+		position: absolute
+		bottom: 20px
+		left: 20px
+		font-size: 24px
+		font-family: $Circe-Bold
+		color: $accent
+		
+
+.section-how-works
+	padding: 50px 0
+	&__title
+		font-family: $Circe-Bold
+		font-size: 40px
+		line-height: 1.2em
+		margin-bottom: 25px
+		span
+			color: $accent
+			font-family: $Circe-ExtraBold
+
+.how-works-item_bgc_orange
+	background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(245,166,81,1) 0%, rgba(246,147,80,1) 100%)
+	color: #fff
+	.how-works-item__title
+		color: #fff
+	.how-works-item_description
+		color: #000
+	.how-works-item__number
+		color: #fff

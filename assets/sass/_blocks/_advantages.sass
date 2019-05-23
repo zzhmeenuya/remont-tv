@@ -1,0 +1,60 @@
+.advantages-items
+	display: flex
+	flex-flow: row wrap
+	margin: 0 -15px 0 -15px
+
+.advantages-item
+	margin: 20px 15px
+	width: calc(100% / 12 * 6 - 30px)
+	background: rgb(2,0,36)
+	background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(245,166,81,1) 0%, rgba(246,147,80,1) 100%)
+	border-radius: 6px
+	padding: 15px
+	color: #fff
+	overflow: hidden
+	position: relative
+	display: flex
+	flex-flow: row nowrap
+	height: 180px
+	&__number
+		position: absolute
+		bottom: -27px
+		right: 15px
+		opacity: .3
+		font-size: 126px
+		font-family: $Circe-ExtraBold
+		line-height: 1em
+		pointer-events: none
+	&__title
+		font-size: 26px
+		font-family: $Circe-Bold
+	&__description
+		p
+			line-height: 1em
+	&__text-content
+		margin-left: 15px
+		padding-top: 15px
+	
+
+.advantages-item_img-car
+	img
+		display: block
+		margin-left: -163px
+
+.advantages-item_img-tools
+	img
+		display: block
+		margin-left: -49px
+
+.advantages-item_img-guarantee
+	img
+		display: block
+		margin-left: -79px
+
+.advantages-item_img-experience
+	img
+		display: block
+		margin-left: -79px
+
+.section-advantages_padding
+	padding: 0 0 100px 0
