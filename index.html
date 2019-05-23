@@ -35,7 +35,7 @@
 
 <body>
 
-	<header class="main-header" style="background: url(/assets/img/header/background.png) no-repeat center / cover">
+	<header class="main-header" style="background: url(/assets/img/header/background.png) no-repeat center bottom / cover">
 		<div class="container">
 
 			<div class="header-top-container">
@@ -92,6 +92,9 @@
 						<h2 class="form-header__title">Вызов мастера</h2>
 						<p class="form-header__description">Оставьте заявку и мы перезвоним Вам!</p>
 
+						<div class="d-none input-hidden">
+							<input type="hidden" name="subject" value="Вызов мастера">
+						</div>
 						<div class="form-header__input-group input-group">
 							<div class="form-header__input-info input-info"></div>
 							<label for="form-header__name" class="d-none">Ваше имя</label>
@@ -340,26 +343,32 @@
 					<h2 class="section-cost__title text-center">Узнайте стоимость ремонта <p>Вашего ТВ прямо сейчас!</p></h2>
 
 					<form class="form form-cost" >
+						<div class="d-none input-hidden">
+							<input type="hidden" name="subject" value="стоимость ремонта ТВ">
+						</div>
 						<div class="form-cost__input-group input-group">
+							<div class="form-cost__input-info input-info"></div>
 							<label for="form-cost__name" class="d-none">Ваше имя</label>
 							<input type="text" id="form-cost__name" name="name" placeholder="Ваше имя">
 						</div>
 						<div class="form-cost__input-group input-group">
+							<div class="form-cost__input-info input-info"></div>
 							<label for="form-cost__phone" class="d-none">Ваше имя</label>
 							<input type="text" id="form-cost__phone" name="phone" placeholder="Ваш телефон">
 						</div>
 						<div class="form-cost__input-group input-group form-cost__input-btn">
 							<input type="submit" value="Узнать стоимость ремонта" class="off">
-							<div>
+							<div class="form-cost__agree-container">
 								<input type="checkbox" id="form-cost__agree" class="d-none" name="agree" value="1">
 								<label for="form-cost__agree" class="label-form-agree">Я принимаю условия <a href="/" >передачи информации</a></label>
 							</div>
 						</div>
+						<div class="form-cost__info"></div>
 					</form>
 
 				</div>
 			</div>
-		</section>
+		</section><!-- /.section-cost -->
 
 	</main>
 

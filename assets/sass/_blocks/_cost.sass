@@ -8,6 +8,7 @@
 		font-size: 40px
 		font-family: $Circe-Bold
 		line-height: 1em
+		margin-bottom: 40px
 
 .section-cost_ptb50
 	padding-top: 100px
@@ -28,7 +29,7 @@
 				background-color: white
 				border: 1px solid #8e8e8e
 				color: #000
-				line-height: 15px
+				line-height: 19px
 				transform: translateY(2px)
 
 label[for="form-cost__agree"]
@@ -45,7 +46,7 @@ label[for="form-cost__agree"]
 		border: 1px solid #8e8e8e
 		box-shadow: inset -1px -1px 3px #bfbfbf
 		margin-right: 10px
-		transform: translateY(2px)
+		transform: translateY(3px)
 
 .form-cost
 	display: flex
@@ -76,4 +77,31 @@ label[for="form-cost__agree"]
 			transform: translateY(3px)
 			box-shadow: 0 2px #FF9005 
 
-		
+.form-cost
+	&__input-btn
+		text-align: center
+	&__agree-container
+		margin-top: 10px
+	&__input-group
+		position: relative
+		&:first-child
+			margin-left: 0
+		&:last-child
+			margin-right: 0
+	&__input-info
+		position: absolute
+		top: -22px
+		right: 0
+		font-size: 15px
+		font-family: $Circe-Light
+		span
+			color: red
+
+.form-cost__info
+	font-size: 17px
+	font-family: $Circe-Light
+	text-align: center
+	line-height: 1.1em
+	span
+		color: red
+
